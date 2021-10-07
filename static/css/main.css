@@ -1,0 +1,290 @@
+:root {
+    --blue: #4e73df;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #e74a3b;
+    --orange: #fd7e14;
+    --yellow: #f6c23e;
+    --green: #1cc88a;
+    --teal: #20c9a6;
+    --cyan: #36b9cc;
+    --white: #fff;
+    --gray: #858796;
+    --gray-dark: #5a5c69;
+    --primary: #4e73df;
+    --secondary: #858796;
+    --success: #1cc88a;
+    --info: #36b9cc;
+    --warning: #f6c23e;
+    --danger: #e74a3b;
+    --light: #f8f9fc;
+    --dark: #5a5c69;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    display: block;
+}
+
+#home-logo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: 42%;
+    margin-right: 45%;
+}
+
+img {
+    margin: 60px -500px 30px 0;
+    /* margin: 60px 0 30px 0; */
+    width: 300px; 
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-title {
+    text-align: center;
+    line-height: inherit;
+    color: #096cce;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 3.5em;
+    margin-top: 70px;
+}
+
+#result-info {
+    margin-top: 90px;
+    font-size: 1.5em;
+    color: rgb(173, 61, 61);
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+
+.upload-group{
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+
+
+#submit_file{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-group{
+    width: 75%;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+
+
+.form-control {
+    display: block;
+    width: 60%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+}
+
+textarea, input {
+    margin-right: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: auto;
+    resize: none;
+    border: none;
+    outline: 0;
+    flex-wrap: wrap;
+}
+
+input:focus{
+    border: solid 3px rgb(158, 185, 235);
+}
+textarea:focus{
+    border: solid 3px rgb(158, 185, 235);
+}
+
+button{
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    font-family: inherit;
+    font-size: 1.2em;
+    line-height: inherit;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #0a6ab8;
+}
+
+button:hover{
+    background-color: #094575;
+}
+
+caption{
+    font-size: 1.2em;
+    font-family: inherit;
+    margin-top: 60px;
+}
+
+#invalide_error{
+    display: block;
+    width: 45%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 10px; 
+    resize: vertical;
+}
+
+#error_msg{
+    
+    width: 97%;
+    /* font-family: inherit;
+    font-size: inherit;
+    line-height: inherit; */
+    resize: vertical;
+    border: none;
+    outline: 0;
+    flex-wrap: wrap;
+    scroll-margin-right: 20px;
+    color: red;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    text-align: left;
+    table-layout: fixed;
+    width: 80%;
+    font-family: inherit;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 60px;
+}
+
+.email-number{
+    width: 5%;
+}
+.email-address{
+    width: 30%;
+}
+
+.data-headers{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #2d3338;
+}
+
+.email-msg-content{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 90px;
+    resize: vertical;
+    color: #495057;
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 5px;
+    
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+
+input[type='file']{
+    display: inline-block;
+    width: 500px;
+    padding: 270px 0 0 0;
+    height: 250px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4;
+    border-radius: 10px;
+    background-size: 60px 60px;
+    text-align: center;
+}
+
+
+#submit_file{
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    font-family: inherit;
+    font-size: 1.2em;
+    line-height: inherit;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #0a6ab8;
+}
+
+#submit_file:hover{
+    background-color: #094575;
+}
+
+#made_by{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    z-index: 998;
+    margin-left: 10px;
+    font-size: x-small;
+    color: black;
+    font-family: inherit;
+}

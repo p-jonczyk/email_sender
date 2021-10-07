@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-mail sender</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+
+<body>
+    <a id="home-logo" href="/"><img alt="" id="logo"
+            src="https://aux.iconspalace.com/uploads/13347011211966979550.png"></a>
+    <p class="page-title" name="send-title" id="send-title">BULK E-MAIL SENDER</p>
+    <div class="container">
+        <div class="upload-group">
+            <form method="post" action="{{ url_for('upload_file') }}" enctype="multipart/form-data">
+                <input class="upload-control" type="file" id="file" name="file" autocomplete="off" required>
+                <br>
+                <p id="file_response">
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+
+                    {% for message in messages %}
+                    {{ message }}
+                    {% endfor %}
+
+                    {% endif %}
+                    {% endwith %}
+                </p>
+                <input id="submit_file" type="submit" value="SUBMIT" name="submit_button">
+            </form>
+        </div>
+    </div>
+    <p id="made_by">Made by Paweł Jonczyk</p>
+</body>
+
+</html>

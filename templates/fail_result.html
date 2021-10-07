@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-mail sender</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+
+<body>
+    <a href="/"><img id="logo" src="https://aux.iconspalace.com/uploads/13347011211966979550.png"></a>
+    <p class="page-title" name="result-title" id="result-title">FAIL !</p>
+    <p class="page-title" name="result-info" id="result-info">Something went wrong...
+        Please check your emails list. Everything above error should be sent.</p>
+    <p class="page-title" name="result-info" id="result-info">Address which caused error: {{ error_msg }}</p>
+    <p class="page-title" name="result-info" id="result-info">Author of website do not take responsibility for any data
+        uploaded or sent via following website.</p>
+    <p id="made_by">Made by Paweł Jonczyk</p>
+</body>

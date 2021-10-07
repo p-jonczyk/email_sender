@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-mail sender</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+
+<body>
+    <a href="/"><img id="logo" src="https://aux.iconspalace.com/uploads/13347011211966979550.png"></a>
+    <div class="container">
+        <form method="post" action="{{ url_for('send') }}" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="email">Your email address</label>
+                <input required type="text" name="emailfrom" class="form-control" id="email_input" autofocus
+                    autocomplete="off" placeholder="name@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input required type="password" name="password" class="form-control" id="password_input"
+                    placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <textarea class="form-control" name="subject" id="subject_input" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="signature">Signature</label>
+                <textarea class="form-control" name="signature" id="signature_input" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" name="submit">SEND MAILS</button>
+            </div>
+            <div class="form-group">
+                <caption>POSSIBLE ERRORS</caption>
+            </div>
+            <div class="form-group" id="invalide_error">
+                <textarea readonly id="error_msg" class="form-control"
+                    placeholder="Be sure to validate emails and messages yourself!">{% for num, email in invalide_emails %}
+{{ num + 1 }}:  {{ email }}{% endfor %}</textarea>
+            </div>
+        </form>
+    </div>
+
+
+    <table class="data-table" name="data-table">
+        <tr class="data-headers">
+            <th class="email-number">No.</th>
+            <th class="email-address">EMAIL</th>
+            <th class="email-msg">MESSAGE</th>
+        </tr>
+        {% for num, data_tuple in table %}
+        <tr>
+            <th>{{ num + 1 }}</th>
+            <th>{{ data_tuple[0] }}</th>
+            <th>
+                <textarea readonly class="email-msg-content"> {{ data_tuple[1] }}</textarea>
+            </th>
+        </tr>
+        {% endfor %}
+    </table>
+    <p id="made_by">Made by Paweł Jonczyk</p>
+</body>
+
+</html>
