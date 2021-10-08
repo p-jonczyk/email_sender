@@ -3,7 +3,7 @@
 **pip install *requirements.txt***
 <br />
 
-### ABOUT
+## ABOUT
 
 Program *(bulk e-mail sender)* allows user to upload excel file *(.xlsx)* which contains columns *'email' and 'message'* and send them via gmail account.
 <br />
@@ -11,7 +11,7 @@ Program *(bulk e-mail sender)* allows user to upload excel file *(.xlsx)* which 
 *My second project with use of Flask, HTML and CSS*
 <br />
 
-### KEY INFO
+## KEY INFO
 
 **Detailed informations are presented on HOW TO site**
 <br />
