@@ -9,6 +9,7 @@ Program *(bulk e-mail sender)* allows user to upload excel file *(.xlsx)* which 
 <br />
 
 *My second project with use of Flask, HTML and CSS*
+<br />
 
 ### KEY INFO
 
