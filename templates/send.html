@@ -10,6 +10,25 @@
 
 
 <body>
+    <nav role="navigation">
+        <div id="menu_toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/how_to">
+                    <li>How to...</li>
+                </a>
+                <a href="https://github.com/p-jonczyk/email_sender">
+                    <li>GIT</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
     <a href="/"><img id="logo" src="https://aux.iconspalace.com/uploads/13347011211966979550.png"></a>
     <div class="container">
         <form method="post" action="{{ url_for('send') }}" enctype="multipart/form-data">
@@ -62,6 +81,7 @@
         </tr>
         {% endfor %}
     </table>
+    <p id="responsibility_msg">YOU USE THIS SITE ON YOUR OWN RESPONSIBILITY</p>
     <p id="made_by">Made by Paweł Jonczyk</p>
 </body>
 

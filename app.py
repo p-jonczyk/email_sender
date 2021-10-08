@@ -39,6 +39,12 @@ def result():
     return render_template("result.html")
 
 
+@app.route("/how_to")
+def how_to():
+    flash("")
+    return render_template("how_to.html")
+
+
 @app.route('/', methods=['POST', 'GET'])
 def upload_file():
     file = request.files['file']

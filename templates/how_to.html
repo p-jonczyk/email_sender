@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-mail sender</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+
+<body>
+    <nav role="navigation">
+        <div id="menu_toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/how_to">
+                    <li>How to...</li>
+                </a>
+                <a href="https://github.com/p-jonczyk/email_sender">
+                    <li>GIT</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <a id="home-logo" href="/"><img id="logo_how_to"
+            src="https://aux.iconspalace.com/uploads/13347011211966979550.png"></a>
+    <p class="page-title" name="send-title" id="send-title">BULK E-MAIL SENDER</p>
+    <p class="page-title" name="how-to-title" id="how-to-title">HOW TO...</p>
+    <div class="page-content">
+        <p class="point-title" name="point-title" id="abotu-gmail-title">&#9675 GMAIL ACCOUNT</p>
+        <p class="point-content" name="point-content" id="about-gmail-content">
+            &#9659 <strong>make sure that your gmail account's <em>2-Step Verification</em> is OFF
+                <em><a href="https://support.google.com/accounts/answer/1064203?hl=en&co=GENIE.Platform%3DDesktop">
+                        (turn off)</em></a>
+            </strong><br>
+            &#9659 <strong>make sure that your gmail account's <em>Less secure apps & your Google Account</em> is OFF
+                <em><a
+                        href="https://support.google.com/accounts/answer/6010255?hl=en#zippy=%2Cif-less-secure-app-access-is-on-for-your-account">
+                        (turn off)</em></a>
+            </strong><br>
+            &#9659 make sure you have entered valid email address and password of gmail from which you want to send
+            messages<br>
+            &#9659 you may verify if all emails were send at your gmail account - they will appear in <em>SENT</em>
+            folder<br>
+            &#9659 according to <a
+                href="https://support.google.com/mail/answer/22839?hl=en#zippy=%2Cyou-have-reached-a-limit-for-sending-mail">
+                <em>Google</em></a> there is a limit of emails that could be sent from an account -
+            <strong>500 emails</strong><br>
+            &#9659 you may also increase the limits <a
+                href="https://support.google.com/a/answer/166852?hl=en#zippy="><em>(Google limits)</em></a><br>
+            <span style="color: red">AUTHOR DO NOT RECOMMEND TO TOGGLE OFF ANY OF MENTIONED SETTINGS
+                <em>(2-Step Verification / Less secure apps & your Google Account)</em>
+                ON PRIVATE ACCOUNTS SINCE IT RESULTS IN REDUCED SECURITY OF YOUR ACCOUNT<strong></strong></span>
+        </p>
+
+        <p class="point-title" name="point-title" id="abotu-excel-title">&#9675 EXCEL TABLE</p>
+        <p class="point-content" name="point-content" id="about-excel-content">
+            &#9659 make sure that its excel file <em>(extension: .xlsx )</em><br>
+            &#9659 file contains two columns with headers: <strong>email</strong> and <strong>message</strong> <span
+                style="color: rgb(25, 142, 196)">as shown
+                below</span><br>
+            <em>(it may also contain other columns, but those two must have exactly mentioned names)</em><br>
+            &#9659 make sure that your emails are valid and there are no empty cells in email column <br>
+            <span style="color: red;">
+                <em>(after upload you will get a hint which of emails <strong>may be</strong>
+                    invalide but you still should validate them yourself !
+                    Author do not take responsibility for undelivered messages!)</em></span><br>
+            &#9659 emails should be delivered to any address that is valid <em>(exist)</em><br>
+            <a href="https://ibb.co/yp7S2c2"><img id="excel_img" src="https://i.ibb.co/423dknk/excel.jpg"
+                    alt="excel"></a>
+        </p>
+    </div>
+    <p id="responsibility_msg">YOU USE THIS SITE ON YOUR OWN RESPONSIBILITY</p>
+    <p id="made_by">Made by Paweł Jonczyk</p>
+</body>
