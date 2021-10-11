@@ -51,7 +51,7 @@
                 <textarea class="form-control" name="signature" id="signature_input" rows="1"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" name="submit">SEND MAILS</button>
+                <button type="submit" name="submit" id="send_mails_button">SEND MAILS</button>
             </div>
             <div class="form-group">
                 <caption>POSSIBLE ERRORS</caption>
@@ -72,7 +72,7 @@
             <th class="email-msg">MESSAGE</th>
         </tr>
         {% for num, data_tuple in table %}
-        <tr>
+        <tr id="file-content">
             <th>{{ num + 1 }}</th>
             <th>{{ data_tuple[0] }}</th>
             <th>

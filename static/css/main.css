@@ -43,18 +43,17 @@ body {
 
 /* logo and img  */
 
-#home-logo {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin-left: 42%;
-    margin-right: 45%;
-}
 
 img {
     margin: 60px -500px 30px 0;
-    /* margin: 60px 0 30px 0; */
     width: 300px; 
+}
+
+#home-logo {
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #logo{
@@ -97,6 +96,10 @@ img {
     word-spacing: 10px;
     letter-spacing: 5px;
     margin-top: -30px;
+}
+
+#send-title{
+    margin-top: 20px;
 }
 
 /* how to  */

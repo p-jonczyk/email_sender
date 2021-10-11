@@ -1,6 +1,9 @@
 __pycache__
 env1
-test_files
 TODO
 test.py
 img_how_to
+latest_logs
+.pytest_cache
+archived_logs
+.env
