@@ -58,8 +58,8 @@ Tests are performed with selenium-base *(https://pypi.org/project/seleniumbase/)
 | #                   | Action           | Test case procedure | Expected result |
 | ------------- | ------------- |  ------------- |  ------------- | 
 | 1.1 | No file choosen  | 1. Click *SUBMIT* button | No redirection occurred and message appears|
-| 1.2 | Invalide file extension choosen  | 1. Uploads invalide file format <br/ > 2. Click *SUBMIT* button | No redirection occurred and message appears |
-| 1.3 | Valid file extension choosen  | 1. Uploads valide file format <br/ > 2. Click *SUBMIT* button | Redirection occurred and credential form is shown |
+| 1.2 | Invalide file extension choosen  | 1. Uploads invalide file format <br /> 2. Click *SUBMIT* button | No redirection occurred and message appears |
+| 1.3 | Valid file extension choosen  | 1. Uploads valide file format <br /> 2. Click *SUBMIT* button | Redirection occurred and credential form is shown |
 | <img width=100/> | <img width=200/> |  <img width=500/> |  <img width=200/> |
 
 ### 2. DATA VERIFICATION
