@@ -1,6 +1,6 @@
 ## INSTALLATION
 
-**pip install *requirements.txt***
+**pip install -r *requirements.txt***
 <br />
 
 ## ABOUT
@@ -36,7 +36,7 @@ Program *(bulk e-mail sender)* allows user to upload excel file *(.xlsx)* which 
 
 ## TESTS
 
-To run tests install **pip install requirements_test.txt**
+To run tests install **pip install -r requirements_test.txt**
 <br />
 
 1. Open terminal in main directory and type *'flask run'* 
